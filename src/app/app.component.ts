@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'compartilhando-dados-componentes';
+    products = [
+    { name: 'Rice', id: 1, price: 200 },
+    { name: 'Beans', id: 2, price: 300 },
+    { name: 'Bananna', id: 3, price: 400 },
+  ];
 }
