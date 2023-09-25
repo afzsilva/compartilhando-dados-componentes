@@ -8,6 +8,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })//Filho
 export class ProductListComponent implements OnInit {
 
+  sessionId = Math.random();
+
   @Input() productList: Product[] = [];
   @Output() onSelectedInChild = new EventEmitter<Product>();
 
