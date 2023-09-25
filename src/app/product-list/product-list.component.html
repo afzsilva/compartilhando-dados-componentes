@@ -1,4 +1,4 @@
 <h1>List of products</h1>
-<li *ngFor="let product of productList">
+<li *ngFor="let product of productList" (click)="onSelectedProduct(product)">
   {{ product.name }}
 </li>
